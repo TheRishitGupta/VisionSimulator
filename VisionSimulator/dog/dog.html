@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dog Vision – Vision Simulator</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <a href="../index.html" class="back">← Back</a>
+
+  <h1>Dog Vision</h1>
+  <p>Drop any image to compare human vs dog view</p>
+
+  <div id="dropZone">Drop image here or click to upload</div>
+  <input type="file" id="fileInput" accept="image/*">
+
+  <div id="comparison">
+    <div class="card">
+      <h2>Human</h2>
+      <img id="humanImg" alt="Human view">
+    </div>
+    <div class="card">
+      <h2>Dog</h2>
+      <canvas id="dogCanvas"></canvas>
+    </div>
+  </div>
+
+  <script src="dog.js"></script>
+</body>
+</html>
